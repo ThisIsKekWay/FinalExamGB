@@ -50,6 +50,8 @@ int NewArrayLen(string[] array)
 
 string[] arr = CreateArray();
 FillArray(arr);
+
+Console.WriteLine("Начальный массив");
 Console.WriteLine(String.Join(", ", arr));
 
 string[] newArr = new string[NewArrayLen(arr)];
@@ -62,5 +64,6 @@ for(int i = 0, j = 0; i < arr.Length; i++)
         j++;
     }
 }
-
+Console.WriteLine();
+Console.WriteLine("Полученный массив");
 Console.WriteLine(String.Join(", ", newArr));
